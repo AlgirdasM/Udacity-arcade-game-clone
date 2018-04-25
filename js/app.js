@@ -101,16 +101,19 @@ class Player {
 
 class Scores {
     constructor() {
+        this.scoreHTML = document.getElementById('score');
         this.clear();
     }
 
     update() {
         this.score++;
+        this.scoreHTML.innerText = this.score;
         console.log(this.score);
     }
 
     clear() {
         this.score = 0;
+        this.scoreHTML.innerText = this.score;
     }
 }
 
