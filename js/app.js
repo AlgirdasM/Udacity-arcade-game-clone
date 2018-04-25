@@ -29,15 +29,12 @@ class Enemy {
 class Player {
     constructor() {
         this.sprite = 'images/char-boy.png';
-        // 505 is width, 101 is one block, so 202 will be center
-        this.x = 202;
-        // 606 is height, 171 is one block, so 435 will be center, but we need to be be off a bit,
-        // so it will be 435 - 45px
-        this.y = 390;
+        this.resetPosition();
     }
 
     update() {
-
+        // if player reaches last block reset to starting position
+        this.y < 0 ? this.resetPosition() : null;
     }
 
     render() {
@@ -54,6 +51,15 @@ class Player {
         // row height = 83px, ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
         (this.pressedKey === 'up' && this.y > 0) ? this.y = this.y - 83 : null;
         (this.pressedKey === 'down' && this.y < 390) ? this.y = this.y + 83 : null;
+    }
+
+    // resetPosition to starting position
+    resetPosition() {
+        // 505 is width, 101 is one block, so 202 will be center
+        this.x = 202;
+        // 606 is height, 171 is one block, so 435 will be center, but we need to be be off a bit,
+        // so it will be 435 - 45px
+        this.y = 390;
     }
 }
 
