@@ -17,6 +17,13 @@ class Enemy {
         // You should multiply any movement by the dt parameter
         // which will ensure the game runs at the same speed for
         // all computers.
+
+        // todo: make random speed.
+        this.speed = 200;
+        // move enemies!
+        this.x = this.x + this.speed * dt;
+        // if on canvas then move else reset off canvas
+        this.x <= 505 ? this.x : this.x = -101;
     }
 
     // Draw the enemy on the screen, required method for game
