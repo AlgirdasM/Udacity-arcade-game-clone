@@ -1,12 +1,14 @@
 // Enemies our player must avoid
 class Enemy {
-    constructor() {
+    constructor(y) {
         // Variables applied to each of our instances go here,
         // we've provided one for you to get started
 
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images
         this.sprite = 'images/enemy-bug.png';
+        this.y = y;
+        this.x = 0;
     }
 
     // Update the enemy's position, required method for game
@@ -69,6 +71,11 @@ let allEnemies = [];
 // Place the player object in a variable called player
 let player = new Player();
 
+//create 3 new enemies and push them to array
+for (let i = 0; i < 3; i++) {
+    // add new enemy to array, 60px offset, each other 83px apart
+    allEnemies.push( new Enemy(60 + (83 * i)) );
+}
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
