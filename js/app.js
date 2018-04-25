@@ -51,6 +51,7 @@ class Enemy {
 
             // collision detected! resetPosition
             player.resetPosition();
+            scores.clear();
         }
     }
 }
@@ -66,7 +67,10 @@ class Player {
 
     update() {
         // if player reaches last block reset to starting position
-        this.y < 0 ? this.resetPosition() : null;
+        if (this.y < 0) {
+            this.resetPosition();
+            scores.update();
+        }
     }
 
     render() {
@@ -94,6 +98,23 @@ class Player {
         this.y = 390;
     }
 }
+
+class Scores {
+    constructor() {
+        this.clear();
+    }
+
+    update() {
+        this.score++;
+        console.log(this.score);
+    }
+
+    clear() {
+        this.score = 0;
+    }
+}
+
+let scores = new Scores;
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
