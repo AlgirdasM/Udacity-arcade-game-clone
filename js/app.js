@@ -18,18 +18,24 @@ class Enemy {
         // which will ensure the game runs at the same speed for
         // all computers.
 
-        // todo: make random speed.
-        this.speed = 200;
         // move enemies!
-        this.x = this.x + this.speed * dt;
-        // if on canvas then move else reset off canvas
-        this.x <= 505 ? this.x : this.x = -101;
+        // if on canvas then move else reset off canvas and generate new speed
+        if (this.x <= 505) {
+            this.x = this.x + this.speed * dt;
+        } else {
+            this.x = -101;
+            // speed between 100 and 400
+            // https://www.w3schools.com/jsref/jsref_random.asp
+            // todo: increase difficulty later on
+            this.speed = Math.floor((Math.random() * 400) + 100);
+        }
     }
 
     // Draw the enemy on the screen, required method for game
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
+
 }
 
 // Now write your own player class
