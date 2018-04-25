@@ -44,8 +44,16 @@ class Player {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
-    handleInput() {
+    handleInput(e) {
+        this.pressedKey = e;
 
+        //column widht is the same as image 101px
+        (this.pressedKey === 'left' && this.x > 0) ? this.x = this.x - 101 : null;
+        (this.pressedKey === 'right' && this.x < 404) ? this.x = this.x + 101 : null;
+
+        // row height = 83px, ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
+        (this.pressedKey === 'up' && this.y > 0) ? this.y = this.y - 83 : null;
+        (this.pressedKey === 'down' && this.y < 390) ? this.y = this.y + 83 : null;
     }
 }
 
