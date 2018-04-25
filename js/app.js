@@ -29,6 +29,8 @@ class Enemy {
             // todo: increase difficulty later on
             this.speed = Math.floor((Math.random() * 400) + 100);
         }
+
+        this.collisionDetection();
     }
 
     // Draw the enemy on the screen, required method for game
@@ -36,6 +38,21 @@ class Enemy {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
+    // collision detection
+    collisionDetection() {
+        // we draw invisible rectangles around player and enemy only, not whole block
+        const playerRect = {x: player.x + 22, y: player.y + 63, width: 58, height: 78};
+        const enemyRect = {x: this.x, y: this.y + 77, width: 97, height: 67};
+
+        if (playerRect.x < enemyRect.x + enemyRect.width &&
+            playerRect.x + playerRect.width > enemyRect.x &&
+            playerRect.y < enemyRect.y + enemyRect.height &&
+            playerRect.height + playerRect.y > enemyRect.y) {
+
+            // collision detected! resetPosition
+            player.resetPosition();
+        }
+    }
 }
 
 // Now write your own player class
