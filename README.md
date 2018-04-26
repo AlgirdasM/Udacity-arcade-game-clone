@@ -19,6 +19,6 @@ You win when you score 12.
 * [Google for this Scholarship!](https://developers.google.com/training/)
 * [Google Fonts](https://fonts.google.com/)
 * [Jory Raphael, Sensible World, Symbolicons.com for Star Wars icons](https://symbolicons.com/license)/)
-
-* [Lucasfilm Ltd.](http://lucasfilm.com* [Star Wars](https://www.starwars.com/)
+* [Lucasfilm Ltd.](http://lucasfilm.com)
+* [Star Wars](https://www.starwars.com/)
 * [Speed Of Light Image By Aperture75](https://www.shutterstock.com/image-illustration/particle-space-traveling-zoom-background-351712073?src=library)
