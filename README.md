@@ -17,6 +17,7 @@ You win when you reach the tractor beam.
 ##Licenses and huge thank you
 * [Udacity Front-End Web Developer Nanodegree Program](https://udacity.com/course/front-end-web-developer-nanodegree--nd001)
 * [Google for this Scholarship!](https://developers.google.com/training/)
+* [Google Fonts](https://fonts.google.com/)
 * [Jory Raphael, Sensible World, Symbolicons.com for Star Wars icons](https://symbolicons.com/license)
 * [Lucasfilm Ltd.](http://lucasfilm.com/)
 * [Star Wars](https://www.starwars.com/)
