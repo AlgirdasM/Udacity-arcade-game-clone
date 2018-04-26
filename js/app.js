@@ -139,7 +139,7 @@ class Scores {
     }
 
     win() {
-        document.getElementById('modal-container').style.display = 'block';
+        modal.style.display = 'block';
         this.clear();
     }
 }
@@ -169,4 +169,12 @@ document.addEventListener('keyup', function(e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
+});
+
+// add play again button event listener
+const modal = document.getElementById('modal-container');
+const playAgainButton = document.getElementById('play-again-button');
+
+playAgainButton.addEventListener('click', function() {
+    modal.style.display = 'none';
 });
