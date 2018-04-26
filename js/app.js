@@ -158,7 +158,7 @@ let allEnemies = [];
 let player = new Player();
 
 //create 3 new enemies and push them to array
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
     // add new enemy to array, 60px offset, each other 83px apart
     allEnemies.push( new Enemy(60 + (83 * i)) );
 }

@@ -108,11 +108,11 @@ var Engine = (function(global) {
          */
         var rowImages = [
                 'images/tractor-beam.png', // Top row is Tractor Beam
-                'images/path-block.png',   // Row 1 of 3 of path block
-                'images/path-block.png',   // Row 2 of 3 of path block
-                'images/path-block.png',   // Row 3 of 3 of path block
-                'images/wroom-block.png',  // Row 1 of 2 of waiting room
-                'images/wroom-block.png'   // Row 2 of 2 of waiting room
+                'images/path-block.png',   // Row 1 of 1 of path block
+                'images/path-block.png',   // Row 2 of 4 of path block
+                'images/path-block.png',   // Row 3 of 4 of path block
+                'images/path-block.png',   // Row 3 of 4 of waiting room
+                'images/wroom-block.png'   // Row 1 of 1 of waiting room
             ],
             numRows = 6,
             numCols = 5,
