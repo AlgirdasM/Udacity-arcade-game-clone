@@ -1,45 +1,46 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-family: 'Gugi', cursive;
-  font-size: 16px;
-  line-height: 1.2em;
-  background: #000;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    font-size: 16px;
+    line-height: 1.2em;
+    background: #000;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
 }
 
 canvas {
-	padding: 20px 0 0;
+    padding: 20px 0 0;
 }
 
 main {
-  width: 100%;
-	padding: 20px 0 0;
-	color: white;
-  display: block;
+    width: 100%;
+    padding: 20px 0 0;
+    color: white;
+    display: block;
 }
 
 h1 {
-	font-size: 3em;
+    font-size: 3em;
 }
 
 h2 {
-  font-size: 2em;
-  margin: 0 0 40px;
+    font-size: 2em;
+    margin: 0 0 40px;
 }
 
 .padding {
-  padding: 20px 0 0;
+    padding: 20px 0 0;
 }
 
 #modal-container {
@@ -83,51 +84,45 @@ h2 {
 
 .play-button:hover {
     background: linear-gradient(180deg, #0eb631 0%, #009920 100%);
-    -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .play-button:focus {
     background: linear-gradient(180deg, #0eb631 0%, #009920 100%);
-    -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button-container {
-  width: 606px;
-  display: none;
+    width: 606px;
+    display: none;
 }
 
 .row {
-  width: 100%;
+    width: 100%;
 }
 
 .control-buttons {
-  margin: 5px;
-  width: 20%;
-  height: 48px;
-  background: linear-gradient(180deg, #2a8623 0%, #007018 100%);
-  border-radius: 4px;
-  border-width: 0;
-  font-size: 16px;
-  text-align: center;
-  color: #ffffff;
+    margin: 5px;
+    width: 20%;
+    height: 48px;
+    background: linear-gradient(180deg, #2a8623 0%, #007018 100%);
+    border-radius: 4px;
+    border-width: 0;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .control-buttons:focus {
-  outline: none;
+    outline: none;
 }
 
 .vkeyboard {
-  background: #2e2e2e;
-  width: 100%;
-  height: 48px;
-  border-width: 0;
-  font-size: 16px;
-  color: #ffffff;
-  display: none;
-  position: fixed;
-  bottom: 0;
+    background: #2e2e2e;
+    width: 100%;
+    height: 48px;
+    border-width: 0;
+    font-size: 16px;
+    color: #ffffff;
+    display: none;
+    position: fixed;
+    bottom: 0;
 }

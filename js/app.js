@@ -218,6 +218,7 @@ rightButton.addEventListener('click', function() {
     player.handleInput('right');
 });
 
+// virtual keyboard enable button listener
 const vkeyboard = document.getElementById('vkeyboard');
 const controlButtons = document.getElementById('controlButtons');
 vkeyboard.addEventListener('click', function() {
