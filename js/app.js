@@ -217,3 +217,10 @@ leftButton.addEventListener('click', function() {
 rightButton.addEventListener('click', function() {
     player.handleInput('right');
 });
+
+const vkeyboard = document.getElementById('vkeyboard');
+const controlButtons = document.getElementById('controlButtons');
+vkeyboard.addEventListener('click', function() {
+    vkeyboard.style.display = 'none';
+    controlButtons.style.display = 'block';
+});

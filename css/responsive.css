@@ -1,4 +1,4 @@
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 606px) {
 	h1 {
 		font-size: 1.8em;
 	}
@@ -10,5 +10,12 @@
 	}
 	.button-container {
 		width: 100%;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 607px) {
+	.vkeyboard {
+		display: block;
 	}
 }
