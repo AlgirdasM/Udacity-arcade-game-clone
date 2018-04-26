@@ -113,12 +113,14 @@ class Player {
     }
 }
 
+// Scores class will count scores and checks for winning condition
 class Scores {
     constructor() {
         this.scoreHTML = document.getElementById('score');
         this.clear();
     }
 
+    // Update HTML with new score and check winning condition
     update() {
         this.scoreHTML.innerText = this.score;
         // show modal if you score 12
@@ -126,22 +128,22 @@ class Scores {
             this.win();
         }
     }
-
+    // Add a score
     add() {
         this.score++;
         this.update();
     }
-
+    // Minus a score
     minus() {
         this.score > 0 ? this.score-- : null;
         this.update();
     }
-
+    // Clear scores
     clear() {
         this.score = 0;
         this.update();
     }
-
+    // Show modal, focus on button and clear scores
     win() {
         modal.style.display = 'block';
         playAgainButton.focus();
@@ -149,16 +151,21 @@ class Scores {
     }
 }
 
+// Create new scores
 let scores = new Scores;
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 let allEnemies = [];
+
 // Place the player object in a variable called player
 let player = new Player();
 
-//create 3 new enemies and push them to array
-for (let i = 0; i < 4; i++) {
+// How many enemies to generate?
+const enemyNumber = 4;
+
+// Create 3 new enemies and push them to array
+for (let i = 0; i < enemyNumber; i++) {
     // add new enemy to array, 60px offset, each other 83px apart
     allEnemies.push( new Enemy(60 + (83 * i)) );
 }
@@ -176,7 +183,7 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-// add play again button event listener
+// Add play again button event listener
 const modal = document.getElementById('modal-container');
 const playAgainButton = document.getElementById('play-again-button');
 
