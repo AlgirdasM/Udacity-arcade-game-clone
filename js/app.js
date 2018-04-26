@@ -89,6 +89,10 @@ class Player {
 
     handleInput(e) {
         this.pressedKey = e;
+        // disable Player controls if modal is showed
+        if(modal.style.display == 'block'){
+            return;
+        }
 
         //column widht is the same as image 101px
         (this.pressedKey === 'left' && this.x > 0) ? this.x = this.x - 101 : null;
