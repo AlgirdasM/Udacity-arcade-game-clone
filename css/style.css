@@ -19,11 +19,24 @@ header {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0 0 40px;
+}
+
+.padding {
+  padding: 20px 0 0;
 }
 
 #modal-container {
     display: none;
+}
+
+#instructions-container {
+    display: block;
 }
 
 .modal-content {

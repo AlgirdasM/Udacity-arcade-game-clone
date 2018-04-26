@@ -90,7 +90,7 @@ class Player {
     handleInput(e) {
         this.pressedKey = e;
         // disable Player controls if modal is showed
-        if(modal.style.display == 'block'){
+        if(modal.style.display == 'block' || instructions.style.display == 'block'){
             return;
         }
 
@@ -185,8 +185,14 @@ document.addEventListener('keyup', function(e) {
 
 // Add play again button event listener
 const modal = document.getElementById('modal-container');
+const instructions = document.getElementById('instructions-container');
 const playAgainButton = document.getElementById('play-again-button');
+const startButton = document.getElementById('start-game');
 
 playAgainButton.addEventListener('click', function() {
     modal.style.display = 'none';
+});
+
+startButton.addEventListener('click', function() {
+    instructions.style.display = 'none';
 });
