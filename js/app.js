@@ -118,12 +118,20 @@ class Scores {
     update() {
         this.score++;
         this.scoreHTML.innerText = this.score;
-        console.log(this.score);
+        // show modal if you score 12
+        if(this.score == 12){
+            this.win();
+        }
     }
 
     clear() {
         this.score = 0;
         this.scoreHTML.innerText = this.score;
+    }
+
+    win() {
+        document.getElementById('modal-container').style.display = 'block';
+        this.clear();
     }
 }
 
