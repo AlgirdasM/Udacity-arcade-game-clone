@@ -11,8 +11,8 @@ It was inspired by a movie Star Wars: A New Hope.
 ##Gameplay:
 Use arrow keys to move up/down/left/right.
 Help Obi-Wan Kenobi to switch off tractor beam by evading stormtroopers on the way.
-You win when you reach the tractor beam.
-
+If you reach tractor beam you get 1 point, if you hit stormtrooper -1.
+You win when you score 12.
 
 ##Licenses and huge thank you
 * [Udacity Front-End Web Developer Nanodegree Program](https://udacity.com/course/front-end-web-developer-nanodegree--nd001)
