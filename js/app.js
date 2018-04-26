@@ -140,6 +140,7 @@ class Scores {
 
     win() {
         modal.style.display = 'block';
+        playAgainButton.focus();
         this.clear();
     }
 }
