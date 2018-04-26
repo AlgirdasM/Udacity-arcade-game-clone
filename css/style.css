@@ -88,6 +88,13 @@ h2 {
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.play-button:focus {
+    background: linear-gradient(180deg, #0eb631 0%, #009920 100%);
+    -webkit-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 .button-container {
   width: 606px;
   display: block;
@@ -107,4 +114,8 @@ h2 {
   font-size: 16px;
   text-align: center;
   color: #ffffff;
+}
+
+.control-buttons:focus {
+  outline: none;
 }
