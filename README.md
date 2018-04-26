@@ -1,6 +1,22 @@
-frontend-nanodegree-arcade-game
-===============================
+# Arcade Game Clone - Obi-Wan Tractor Beam edition
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+##Description:
+This is project was created for Udacity Google Developer Nanodegree Scholarship program.
+It was inspired by a movie Star Wars: A New Hope.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+##Install
+1. Download or Clone the Repository.
+2. Open index.html file to view the project in your browser.
+
+##Gameplay:
+Use arrow keys to move up/down/left/right.
+Help Obi-Wan Kenobi to switch off tractor beam by evading stormtroopers on the way.
+You win when you reach the tractor beam.
+
+
+##Licenses and huge thank you
+* [Udacity Front-End Web Developer Nanodegree Program](https://udacity.com/course/front-end-web-developer-nanodegree--nd001)
+* [Google for this Scholarship!](https://developers.google.com/training/)
+* [Jory Raphael, Sensible World, Symbolicons.com for Star Wars icons](https://symbolicons.com/license)
+* [Lucasfilm Ltd.](http://lucasfilm.com/)
+* [Star Wars](https://www.starwars.com/)
