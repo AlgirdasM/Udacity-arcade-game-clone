@@ -61,7 +61,7 @@ class Enemy {
 
             // collision detected! resetPosition
             player.resetPosition();
-            scores.clear();
+            scores.minus();
         }
     }
 }
@@ -79,7 +79,7 @@ class Player {
         // if player reaches last block reset to starting position
         if (this.y < 0) {
             this.resetPosition();
-            scores.update();
+            scores.add();
         }
     }
 
@@ -116,7 +116,6 @@ class Scores {
     }
 
     update() {
-        this.score++;
         this.scoreHTML.innerText = this.score;
         // show modal if you score 12
         if(this.score == 12){
@@ -124,9 +123,19 @@ class Scores {
         }
     }
 
+    add() {
+        this.score++;
+        this.update();
+    }
+
+    minus() {
+        this.score > 0 ? this.score-- : null;
+        this.update();
+    }
+
     clear() {
         this.score = 0;
-        this.scoreHTML.innerText = this.score;
+        this.update();
     }
 
     win() {
