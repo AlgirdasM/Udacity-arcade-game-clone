@@ -183,20 +183,23 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-// Add play again button event listener
-const modal = document.getElementById('modal-container');
+// Add start game button event listener
 const instructions = document.getElementById('instructions-container');
-const playAgainButton = document.getElementById('play-again-button');
 const startButton = document.getElementById('start-game');
-
-playAgainButton.addEventListener('click', function() {
-    modal.style.display = 'none';
-});
 
 startButton.addEventListener('click', function() {
     instructions.style.display = 'none';
 });
 
+// Add play again button event listener
+const modal = document.getElementById('modal-container');
+const playAgainButton = document.getElementById('play-again-button');
+
+playAgainButton.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
+// add virtual keyboard listener
 const upButton = document.getElementById('up');
 const downButton = document.getElementById('down');
 const leftButton = document.getElementById('left');
