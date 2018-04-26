@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obi-Wan Tractor Beam, Classic Arcade Game Clone</title>
     <meta name="description" content="This is project was created for Udacity Google Developer Nanodegree Scholarship program. It was inspired by a movie Star Wars: A New Hope.">
     <meta name="image" content="https://www.amfullstack.com/arcade-game/images/meta.jpg">
@@ -15,12 +16,28 @@
     <meta name="og:image" content="https://www.amfullstack.com/arcade-game/images/meta.jpg">
     <meta name="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<span>Score: </span><span id="score"></span>
-	</header>
+	<main>
+		<div class="row">
+            <span>Score: </span><span id="score"></span>
+        </div>
+        <div class="row" id="head">
+        </div>
+	</main>
+
+    <div class="button-container">
+        <div class="row">
+            <button class="control-buttons" id="up">Up</button>
+        </div>
+        <div class="row">
+            <button class="control-buttons" id="left">Left</button>
+            <button class="control-buttons" id="down">Down</button>
+            <button class="control-buttons" id="right">Right</button>
+        </div>
+    </div>
 
     <div id="modal-container">
         <div class="modal-content">
@@ -35,12 +52,13 @@
             <h1>Arcade Game Clone</h1>
             <h2>Obi-Wan Tractor Beam edition</h2>
             <span>Help Obi-Wan Kenobi to switch off tractor beam by evading stormtroopers on the way.</span>
-            <span>Use keyboard arrow keys to move character.</span>
+            <span class="padding">Use keyboard arrow keys to move character.</span>
             <span>To win you need to score 12 points.</span>
             <span class="padding">May the Force be with you!</span>
             <button id="start-game" class="play-button" autofocus>Start game!</button>
         </div>
     </div>
+
 
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>

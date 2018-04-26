@@ -196,3 +196,21 @@ playAgainButton.addEventListener('click', function() {
 startButton.addEventListener('click', function() {
     instructions.style.display = 'none';
 });
+
+const upButton = document.getElementById('up');
+const downButton = document.getElementById('down');
+const leftButton = document.getElementById('left');
+const rightButton = document.getElementById('right');
+
+upButton.addEventListener('click', function() {
+    player.handleInput('up');
+});
+downButton.addEventListener('click', function() {
+    player.handleInput('down');
+});
+leftButton.addEventListener('click', function() {
+    player.handleInput('left');
+});
+rightButton.addEventListener('click', function() {
+    player.handleInput('right');
+});

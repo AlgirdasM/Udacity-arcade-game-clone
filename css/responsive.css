@@ -1,0 +1,14 @@
+@media screen and (max-width: 605px) {
+	h1 {
+		font-size: 1.8em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	canvas {
+		width: 85%;
+	}
+	.button-container {
+		width: 100%;
+	}
+}
