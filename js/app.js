@@ -6,7 +6,7 @@ class Enemy {
 
         // The image/sprite for our enemies, this uses
         // a helper we've provided to easily load images
-        this.sprite = 'images/enemy-bug.png';
+        this.sprite = 'images/stormtrooper.png';
         this.y = y;
         this.x = 0;
     }
@@ -41,8 +41,18 @@ class Enemy {
     // collision detection
     collisionDetection() {
         // we draw invisible rectangles around player and enemy only, not whole block
-        const playerRect = {x: player.x + 22, y: player.y + 63, width: 58, height: 78};
-        const enemyRect = {x: this.x, y: this.y + 77, width: 97, height: 67};
+        const playerRect = {
+                            x: player.x + 15,
+                            y: player.y + 68,
+                            width: 77,
+                            height: 72
+                            };
+        const enemyRect = {
+                            x: this.x + 20,
+                            y: this.y + 77,
+                            width: 62,
+                            height: 66
+                            };
 
         if (playerRect.x < enemyRect.x + enemyRect.width &&
             playerRect.x + playerRect.width > enemyRect.x &&
@@ -61,7 +71,7 @@ class Enemy {
 // a handleInput() method.
 class Player {
     constructor() {
-        this.sprite = 'images/char-boy.png';
+        this.sprite = 'images/obi-wan.png';
         this.resetPosition();
     }
 
