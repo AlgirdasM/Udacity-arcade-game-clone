@@ -77,11 +77,7 @@ class Player {
     }
 
     update() {
-        // if player reaches last block reset to starting position
-        if (this.y < 0) {
-            this.resetPosition();
-            scores.add();
-        }
+
     }
 
     render() {
@@ -102,6 +98,16 @@ class Player {
         // row height = 83px, ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
         (this.pressedKey === 'up' && this.y > 0) ? this.y = this.y - 83 : null;
         (this.pressedKey === 'down' && this.y < 390) ? this.y = this.y + 83 : null;
+
+        this.reachLast();
+    }
+
+    // if player reaches last block reset to starting position
+    reachLast() {
+        if (this.y < 0) {
+            this.resetPosition();
+            scores.add();
+        }
     }
 
     // resetPosition to starting position
