@@ -9,7 +9,7 @@ It was inspired by a movie Star Wars: A New Hope.
 2. Open index.html file to view the project in your browser.
 
 ## Play it online
-[Click here to play it online!](https://algirdasm.github.io/Udacity-arcade-game-clone/)
+[Click here to play it online!](https://algirdasm.github.io/arcade-game-clone/)
 
 ## Gameplay:
 Use arrow keys to move up/down/left/right.
